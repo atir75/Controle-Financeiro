@@ -31,7 +31,7 @@ const updateBalanceValues = () => {
         .filter(value => value > 0)
         .reduce((accumulator, value) => accumulator + value, 0)
         .toFixed(2)
-    const expense = transactionAmouts.filter(value => value < 0)
+    const expense = transactionAmouts.filter(value => value < 0).reduce((accumulator, value))
 }
 
 const init = () => {
